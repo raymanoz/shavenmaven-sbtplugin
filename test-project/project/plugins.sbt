@@ -1,0 +1,1 @@
+addSbtPlugin("com.googlecode.shavenmaven-sbtplugin" %% "shavenmaven-sbtplugin" % "1")

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: com.googlecode.utterlyidle:utterlyidle:707">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.googlecode.utterlyidle/utterlyidle/jars/utterlyidle-707.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.googlecode.utterlyidle/utterlyidle/srcs/utterlyidle-707-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
