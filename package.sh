@@ -1,3 +1,5 @@
+#!/bin/bash
+set -e
 base_dir=$(dirname $0)
 
 project_name=shavenmaven-sbtplugin
