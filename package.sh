@@ -9,6 +9,7 @@ build_number=${BUILD_NUMBER-dev.build}
 release_name=${project_name}-${build_number}
 release_jar=${release_name}.jar
 
+chmod +x ${base_dir}/sbt.sh
 ${base_dir}/sbt.sh clean package
 
 hg log -l 1 > ${artifacts_dir}/hg.properties
