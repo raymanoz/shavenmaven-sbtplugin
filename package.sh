@@ -7,10 +7,11 @@ build_number=${BUILD_NUMBER-dev.build}
 release_name=${project_name}-${build_number}
 release_jar=${release_name}.jar
 
-${base_dir}/build.sh clean package
+${base_dir}/sbt.sh clean package
 
 hg log -l 1 > ${artifacts_dir}/hg.properties
 hg_summary=`grep summary ${artifacts_dir}/hg.properties | cut -d: -f2 | xargs`
+rm ${artifacts_dir}/hg.properties
 
 echo "project.name=${project_name}" > ${release_props}
 echo "release.files=${release_jar}" >> ${release_props}
