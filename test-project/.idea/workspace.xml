@@ -136,7 +136,7 @@
       <file leaf-file-name="plugins.sbt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project/plugins.sbt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="84" selection-start="156" selection-end="156" vertical-scroll-proportion="0.038961038">
+            <state line="2" column="122" selection-start="158" selection-end="158" vertical-scroll-proportion="0.038961038">
               <folding />
             </state>
           </provider>
@@ -580,7 +580,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project/plugins.sbt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="84" selection-start="156" selection-end="156" vertical-scroll-proportion="0.038961038">
+        <state line="2" column="122" selection-start="158" selection-end="158" vertical-scroll-proportion="0.038961038">
           <folding />
         </state>
       </provider>
