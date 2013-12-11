@@ -2,8 +2,10 @@
 set -e
 base_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+scala_version=2.10
+sbt_version=0.13
 project_name=shavenmaven-sbtplugin
-artifacts_dir=${base_dir}/target/scala-2.10/sbt-0.13
+artifacts_dir=${base_dir}/target/scala-${scala_version}/sbt-${sbt_version}
 release_props=${artifacts_dir}/release.properties
 build_number=${BUILD_NUMBER-dev.build}
 release_name=${project_name}-${build_number}
@@ -20,7 +22,7 @@ echo "project.name=${project_name}" > ${release_props}
 echo "release.files=${release_jar}" >> ${release_props}
 echo "${release_name}.pom.labels=POM" >> ${release_props}
 echo "release.version=${build_number}" >> ${release_props}
-echo "release.path=com/googlecode/${project_name}/${project_name}/${build_number}/" >> ${release_props}
+echo "release.path=com/googlecode/${project_name}/${project_name}_${scala_version}_${sbt_version}/${build_number}/" >> ${release_props}
 echo "release.name=${release_name}" >> ${release_props}
 echo "${release_jar}.description=${hg_summary} build:${build_number}" >> ${release_props}
 echo "${release_jar}.labels=Jar" >> ${release_props}
