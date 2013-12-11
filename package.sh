@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-base_dir=$(dirname $0)
+base_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 project_name=shavenmaven-sbtplugin
 artifacts_dir=${base_dir}/target/scala-2.10/sbt-0.13
@@ -12,6 +12,7 @@ release_jar=${release_name}.jar
 chmod +x ${base_dir}/sbt.sh
 ${base_dir}/sbt.sh clean package
 
+cd ${base_dir}
 hg log -l 1 > ${artifacts_dir}/hg.properties
 hg_summary=`grep summary ${artifacts_dir}/hg.properties | cut -d: -f2 | xargs`
 
