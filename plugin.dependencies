@@ -1,0 +1,6 @@
+mvn://repo.bodar.com/com.googlecode.shavenmaven:shavenmaven:jar:94
+mvn://repo.bodar.com/com.googlecode.totallylazy:totallylazy:jar:1130
+mvn://repo.bodar.com/com.googlecode.utterlyidle:utterlyidle:jar:707
+mvn:org.hamcrest:hamcrest-core:jar:1.2.1
+mvn:org.hamcrest:hamcrest-library:jar:1.2.1
+mvn:junit:junit-dep:jar:4.8.2

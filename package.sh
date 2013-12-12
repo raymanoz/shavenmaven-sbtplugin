@@ -31,7 +31,7 @@ echo "${release_jar}.labels=Jar" >> ${release_props}
 echo "${release_jar}.pom.description=Maven POM file build:${build_number}" >> ${release_props}
 
 artifact_uri=mvn:com.googlecode.${project_name}:${project_name}:jar:${build_number}
-java -cp ${base_dir}/shavenmaven-94.jar com.googlecode.shavenmaven.PomGenerator ${artifact_uri} ${artifacts_dir}
+java -cp ${base_dir}/shavenmaven-94.jar com.googlecode.shavenmaven.PomGenerator ${artifact_uri} plugin.dependencies ${artifacts_dir}
 
 awk '/<dependencies>/{print "<properties>";print "<sbtVersion>0.13</sbtVersion>";print "<scalaVersion>2.10</scalaVersion>";print "</properties>";print"";}1' ${pom_file} > ${pom_file}-temp
 rm ${pom_file}
