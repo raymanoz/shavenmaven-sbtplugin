@@ -1,7 +1,8 @@
+package com.googlecode.shavenmaven
+
 import sbt._
 import Keys._
 import java.io.File
-import com.googlecode.shavenmaven.Dependencies
 
 trait ShavenMaven {
 
