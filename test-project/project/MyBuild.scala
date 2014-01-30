@@ -1,5 +1,5 @@
-import sbt._
-import Keys._
+import com.googlecode.shavenmaven.ShavenMaven
+import sbt.{Build, Defaults, Project, file}
 
 object MyBuild extends Build with ShavenMaven {
 
