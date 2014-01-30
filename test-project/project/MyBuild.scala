@@ -1,7 +1,7 @@
-import com.googlecode.shavenmaven.ShavenMaven
+import com.googlecode.shavenmaven.ShavenMaven.shavenMavenTask
 import sbt.{Build, Defaults, Project, file}
 
-object MyBuild extends Build with ShavenMaven {
+object MyBuild extends Build {
 
   lazy val basicSettings = Defaults.defaultSettings
 

@@ -1,10 +1,10 @@
 package com.googlecode.shavenmaven
 
-import sbt._
-import Keys._
+import sbt.Tags.Update
+import sbt.Keys.{update, baseDirectory}
 import java.io.File
 
-trait ShavenMaven {
+object ShavenMaven extends sbt.Plugin {
 
   val shavenMavenTask = update <<= (update, baseDirectory) map {
     (updateReport, baseDirectory) => {
@@ -13,6 +13,6 @@ trait ShavenMaven {
       Dependencies.update(projectDir, libDir)
       updateReport
     }
-  } tag(Tags.Update)
+  } tag Update
 
 }

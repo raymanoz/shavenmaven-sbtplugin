@@ -1,3 +1,3 @@
 resolvers += "Bodar Repo" at "http://repo.bodar.com/"
 
-addSbtPlugin("com.googlecode.shavenmaven-sbtplugin" %% "shavenmaven-sbtplugin" % "19")
+addSbtPlugin("com.googlecode.shavenmaven-sbtplugin" %% "shavenmaven-sbtplugin" % "20")
