@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: com.googlecode.shavenmaven:shavenmaven:95">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.googlecode.shavenmaven/shavenmaven/jars/shavenmaven-95-dep.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

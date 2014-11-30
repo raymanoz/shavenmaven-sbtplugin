@@ -1,0 +1,19 @@
+language: java
+jdk:
+- oraclejdk7
+script: ./travis_build.sh
+env:
+  global:
+  - BUILD_NUMBER=$TRAVIS_BUILD_NUMBER
+  - secure: OQTp8evuR5jAyv2CQQngOelamtjqq/bo7wbZr5tOCJOsg3Bx5SjqTImJQrWzitcotmkY04ajzbJcqbR6yEAlvd7Ajl8em6Ld04ikL0Ao9Hd6LzQjxYSh5Quys3X8hkSKsMPCFHB28IlQ8wynrYrJ1Xi+tz0nQWuLTuXboHYTN+A=
+  - secure: I+Z0uDw0yTg3ZDY42u4zeobgN61/I7Qbb9nDkLioQhGS8kHQqWZFbA02f0WS0J8LDckvFAyzDdc9XysIscmDPkLpM8G7naiU0FN+lCYXrnjCGYYRpwky2o5xdKeVkvulhqwNvT9X50JfjfEFUqXJ1w4Sb/GlGQTFo+dAqun8IR8=
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  bucket: repo.raymanoz.com
+  region: eu-west-1
+  endpoint: repo.raymanoz.com.s3-website-eu-west-1.amazonaws.com
+  skip_cleanup: true
+  local-dir: target/s3
+  upload-dir: com/raymanoz/shavenmaven-sbtplugin/shavenmaven-sbtplugin_2.10/$VERSION

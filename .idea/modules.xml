@@ -4,7 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea_modules/shavenmaven.iml" filepath="$PROJECT_DIR$/.idea_modules/shavenmaven.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea_modules/shavenmaven-build.iml" filepath="$PROJECT_DIR$/.idea_modules/shavenmaven-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shavenmaven-sbtplugin.iml" filepath="$PROJECT_DIR$/.idea/modules/shavenmaven-sbtplugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shavenmaven-sbtplugin-build.iml" filepath="$PROJECT_DIR$/.idea/modules/shavenmaven-sbtplugin-build.iml" />
     </modules>
   </component>
 </project>
-

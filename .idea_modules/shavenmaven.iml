@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
-  <component name="FacetManager">
-    <facet type="scala" name="Scala">
-      <configuration>
-        <option name="compilerLibraryLevel" value="Project" />
-        <option name="compilerLibraryName" value="SBT: scala:2.10.2" />
-        <option name="fsc" value="true" />
-      </configuration>
-    </facet>
-  </component>
+  <component name="FacetManager" />
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/../target/scala-2.10/sbt-0.13/classes" />
     <output-test url="file://$MODULE_DIR$/../target/scala-2.10/sbt-0.13/test-classes" />
@@ -36,7 +28,6 @@
     <orderEntry type="library" name="SBT: org.objenesis:objenesis:1.2" level="project" />
     <orderEntry type="library" name="SBT: com.googlecode.funclate:funclate:109" level="project" />
     <orderEntry type="library" name="SBT: com.googlecode.yadic:yadic:167" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="SBT: org.scala-lang:scala-library:2.10.2:provided" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="SBT: org.scala-sbt:sbt:0.13.0:provided" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="SBT: org.scala-sbt:main:0.13.0:provided" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="SBT: org.scala-sbt:actions:0.13.0:provided" level="project" />
@@ -80,6 +71,7 @@
     <orderEntry type="library" scope="PROVIDED" name="SBT: org.scala-sbt:precompiled-2_8_2:0.13.0:provided" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="SBT: org.scala-sbt:precompiled-2_9_2:0.13.0:provided" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="SBT: org.scala-sbt:precompiled-2_9_3:0.13.0:provided" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.10.2:provided" level="project" />
   </component>
 </module>
 

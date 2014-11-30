@@ -1,5 +1,6 @@
-package com.googlecode.shavenmaven
+package com.raymanoz.shavenmaven
 
+import com.googlecode.shavenmaven.Dependencies
 import sbt.Tags.Update
 import sbt.Keys.{update, baseDirectory}
 import java.io.File
