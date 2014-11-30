@@ -1,4 +1,4 @@
-import com.googlecode.shavenmaven.ShavenMaven.shavenMavenTask
+import com.raymanoz.shavenmaven.ShavenMaven.shavenMavenTask
 import sbt.{Build, Defaults, Project, file}
 
 object MyBuild extends Build {
